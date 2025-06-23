@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+   justify-items: center;
+
+}
+.container{
+    background-color: aquamarine;
+    margin-top: 5rem;
+    border: 5px solid rgb(23, 170, 123);
+    width: 20rem;
+    height: auto;
+    font-size: 20px;
+    justify-items: center;
+}
+input{
+    background-color: rgb(41, 188, 139);
+    height: 2rem;
+    width: 13rem;
+    border-radius: 5%;
+    color: black;
+}
+#button{
+    background-color: rgb(23, 170, 123);
+    font-size: 20px;
+    border-radius: 20px;
+}
+#button:hover{
+    background-color: aquamarine;
+}
+#messege{
+    display: none;
+}
+
+
+.invalid{
+    color: red;
+    font-size: 15px;
+   padding-left: 10px;
+}
+.valid{
+    color:green;
+    font-size: 15px;
+    padding-left: 10px;
+}
