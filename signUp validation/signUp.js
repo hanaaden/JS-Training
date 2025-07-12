@@ -3,7 +3,7 @@ var letter = document.getElementById('letter');
 var number = document.getElementById('number');
 var capital  = document.getElementById('capital');
 var length = document.getElementById('length');
-
+//after declaration
 myInput.onfocus = function(){
     document.getElementById('messege').style.display = 'block';
 }
