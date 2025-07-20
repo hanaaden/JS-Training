@@ -3,6 +3,9 @@ var letter = document.getElementById('letter');
 var number = document.getElementById('number');
 var capital  = document.getElementById('capital');
 var length = document.getElementById('length');
+var confirmPass = document.getElementById('confpsd');
+var button = document.getElementById('button');
+var button = document.getElementById('button');
 
 myInput.onfocus = function(){
     document.getElementById('messege').style.display = 'block';
@@ -48,4 +51,14 @@ myInput.onkeyup = function(){
           length.classList.remove('valid')
         length.classList.add('invalid')
     }
+
+    button.onclick = function(){
+         if(myInput.value == confirmPass.value){
+          alert('passwords matches')
+    }else{
+        alert('match the passwords')
+    }
+    }
+
+   
 }
