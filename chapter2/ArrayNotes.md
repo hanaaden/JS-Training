@@ -1,3 +1,5 @@
+# ARRAYS
+
 Arrays are lists of values. These values can be of all data types and one
  array can even contain different data types. It is often very useful to store
  multiple values inside one variable; for exa
@@ -10,13 +12,13 @@ const . You can change the values of a constant array, but you
 What do you think will happen if we use a negative index or an index that is
 higher than the number of values we get?
 
-//create Array 
+## create Array 
 cars = ["toyota", "Tesla" , "BMW"]
-console.log(cars[-1]) -- undefined 
+console.log(cars[-1]) -- ** undefined **
 We didn't assign a value to the negative or non-existent index, so when we
 ask for it, the value is undefined.
 
-OVERWRITTING ARRAYS 
+## OVERWRITTING ARRAYS 
 
 The elements in an array can be overwritten. This can be done by accessing
 a certain element using the index and assigning a new value
@@ -26,13 +28,13 @@ console.log(cars)
 
 the output will be ["Suzuki", "Tesla" , "BMW"]
 
-Built-in length property
+## Built-in length property
 
 This will return the
 number of values that the array
 console.log(cars.length) //3
 
-Practice exercise 
+## Practice exercise 
 1. Create an array to use as your shopping list with 3 items: "Milk,"
 "Bread," and "Apples."
 2. Check your list length in the console.
@@ -40,7 +42,7 @@ Practice exercise
 4. Output your entire list to the console.
 
 
-ARRAYS METHODS
+## ARRAYS METHODS
 1: Adding and replacing elements
 cars.push("Mercedes")
 console.log(cars) 
@@ -73,7 +75,7 @@ Deleting the first element can be done with shift()
 
 you can also delete by using splice()
 
-finding array by using 
+## finding array by using 
 let findValue2 = arr8.find(e => e === 10);
 console.log(findValue, findValue2);
 
@@ -82,7 +84,7 @@ let findIndex3 = arr8.indexOf(6, 2);
 
 In this case, the value of findIndex3 will be -1, because 6 cannot be found in index 2
 
-SORTING 
+## SORTING 
 
 It sorts numbers from
 small to high and strings A-Z. You can call sort() 
@@ -95,7 +97,7 @@ reverse()
 names.reserve();
 console.log(names)
 
-Practice exercise 3.2
+## Practice exercise 3.2
 1. Create an empty array to use as a shopping list.
 2. Add Milk , Bread , and Apples to your list.
 3. Update " Bread " with Bananas and Eggs.
