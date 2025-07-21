@@ -3,14 +3,13 @@ var letter = document.getElementById('letter');
 var number = document.getElementById('number');
 var capital  = document.getElementById('capital');
 var length = document.getElementById('length');
-<<<<<<< HEAD
+
 var confirmPass = document.getElementById('confpsd');
 var button = document.getElementById('button');
 var button = document.getElementById('button');
 
-=======
+
 //after declaration
->>>>>>> 7673c6ab26a5051a7dab0262a445ecbc717beeea
 myInput.onfocus = function(){
     document.getElementById('messege').style.display = 'block';
 }
