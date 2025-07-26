@@ -1,0 +1,30 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+    <style>
+        button{
+  background-color: blueviolet;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  margin-left: 0.1rem;
+  margin-top: 20rem;
+}
+</style>
+</head>
+<body>
+	<button id="btn">Color changes randomly </button>
+	<script>
+const btn = document.getElementById("btn");
+function changer (){
+   const arr = ["red" , "green" ,"black" , "lightblue" , "darkgreen", "darkblue" , "pink" , "hotpink" , "lightpink" , "brown" , "grey" ,"purple" , "lightpurple"];
+   const ramdomm = Math.floor(Math.random()* arr.length)
+   const rondomly = arr[ramdomm]
+  document.body.style.backgroundColor = rondomly 
+}
+setInterval(changer,1000)
+    </script>
+</body>
+</html>
