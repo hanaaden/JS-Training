@@ -56,7 +56,28 @@
   </div>
   <script>
     const input = document.getElementById("timeInput")
+    const button = document.getElementById('startBtn')
+    const display = document.getElementById("display")
     
+   
+    button.addEventListener("click" ,function(){
+        let count = parseInt(input.value)
+         display.textContent = count
+         const timer = setInterval(function (){
+         count--
+           if (count <= 0) {
+      clearInterval(timer);
+      display.textContent = "Time's up!";
+    } else {
+      display.textContent = count;
+    }
+  
+       
+        
+    } , 1000)
+    })
+
+
   </script>
 </body>
 </html>
