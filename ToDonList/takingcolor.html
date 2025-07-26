@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+    <style>
+    input[type="text"] {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+    </style>
+</head>
+<body>
+
+	<input type="text" id="input" placeholder="Enter the color">
+	<button id="btn">Change</button>
+	<script>
+    const input = document.getElementById("input")
+const button = document.getElementById("btn")
+
+button.addEventListener("click" , function () {
+   const option  = input.value.trim()
+   document.body.style.backgroundColor= option
+})
+    </script>
+</body>
+</html>
