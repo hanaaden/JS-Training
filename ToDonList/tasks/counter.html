@@ -1,0 +1,68 @@
+<!-- Simple Counter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 3 - Simple Counter</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="counter">0</h1>
+    <div class="buttons">
+      <button id="increaseBtn">Increase</button>
+      <button id="decreaseBtn">Decrease</button>
+    </div>
+  </div>
+
+  <script>
+      const counter = document.getElementById("counter")
+      const increaser =  document.getElementById("increaseBtn")
+      const decreaser =  document.getElementById("decreaseBtn")
+      let num = 0
+
+      increaser.addEventListener("click", function(){
+        
+        num++
+        counter.textContent = num
+      })
+
+      decreaser.addEventListener("click" , function(){
+        num--
+        counter.textContent = num
+      })
+  </script>
+</body>
+</html>

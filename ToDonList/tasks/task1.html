@@ -1,0 +1,49 @@
+<!-- Change Text on Button Click -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+     <div class="container">
+    <p id="message">Hello</p>
+    <button id="changeBtn">Change Text</button>
+  </div>
+    <script>
+   const message = document.getElementById("message")
+   const changeBtn = document.getElementById("changeBtn")
+
+   changeBtn.addEventListener("click" , function(){
+    message.textContent = "You clicked the button!"
+   })
+    </script>
+</body>
+</html>

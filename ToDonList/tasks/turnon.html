@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task 5 - Light Bulb Toggle</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: transparent;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: lightpink;
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Light Bulb Toggle</h1>
+    <img id="bulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Light bulb">
+   <p> <button id="toggleBtn">Turn On</button></p>
+  </div>
+
+  <script>  
+      const bulb = document.getElementById("bulb")
+      const toggleBtn  = document.getElementById("toggleBtn")
+      toggleBtn .addEventListener("click", function(){
+       if (bulb.src.includes("bulboff")){
+        bulb.src = "https://www.w3schools.com/js/pic_bulbon.gif";
+        toggleBtn.textContent = "Turn off"
+       
+       }else{
+             bulb.src = "https://www.w3schools.com/js/pic_bulboff.gif";
+             toggleBtn.textContent = "Turn on"
+             
+       }
+      })
+  </script>
+</body>
+</html>
