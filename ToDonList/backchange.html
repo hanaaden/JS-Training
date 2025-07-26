@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Snake Game</title>
+	<style>
+    button{
+  background-color: blueviolet;
+  color: white;
+  font-size: 30px;
+  border-radius: 20px;
+  margin-left: 6rem;
+  margin-top: 20rem;
+}
+    </style>
+</head>
+<body>
+	<button id="btn">Changer</button>
+	<script>
+const button = document.getElementById("btn")
+
+button.onclick = function()  {
+  let arr = ["red" , "orange" , "yellow",
+    "lightgreen" , "darkgreen","lightblue", "darkblue" ];
+  const randomIndex = Math.floor(Math.random() * arr.length);
+const randomColor = arr[randomIndex];
+    document.body.style.backgroundColor = randomColor;
+
+}
+    </script>
+</body>
+</html>
