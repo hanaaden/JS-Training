@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JS Tasks Flashcards</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 20px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 280px;
+      padding: 20px;
+      user-select: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 180px;
+      position: relative;
+    }
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #333;
+    }
+    .desc {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.4;
+      flex-grow: 1;
+    }
+    .check-link {
+      margin-top: 15px;
+      font-weight: bold;
+      font-size: 14px;
+      color: #007BFF;
+      text-decoration: none;
+      align-self: flex-start;
+      border: 1.5px solid #007BFF;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .check-link:hover {
+      background-color: #007BFF;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="title">Task 1: Change Text on Button Click</div>
+    <div class="desc">Clicking a button changes the text inside a paragraph element dynamically.</div>
+    <a class="check-link" href="task1.html" target="_blank" title="Open Task 1">CHECK</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Task 2: Change Background Color Randomly</div>
+    <div class="desc">Background color changes every second to a random color from a predefined list.</div>
+    <a class="check-link" href="randomcolorchange.html" target="_blank" title="Open Task 2">CHECK</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Task 3: Simple Counter</div>
+    <div class="desc">A number displayed on screen increases or decreases when buttons are clicked.</div>
+    <a class="check-link" href="counter.html" target="_blank" title="Open Task 3">CHECK</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Task 5: Light Bulb Toggle</div>
+    <div class="desc">Toggle light bulb image ON/OFF by clicking a button with state detection.</div>
+    <a class="check-link" href="turnon.html" target="_blank" title="Open Task 5">CHECK</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Task 6 (Alt): Show & Hide Password</div>
+    <div class="desc">Checkbox toggles password visibility by changing input type attribute.</div>
+    <a class="check-link" href="hidepassword.html" target="_blank" title="Open Task 6 Alternative">CHECK</a>
+  </div>
+
+  <div class="card">
+    <div class="title">Task 7: Countdown Timer</div>
+    <div class="desc">Countdown from user input seconds to zero, then shows “Time’s up!” message.</div>
+    <a class="check-link" href="timer.html" target="_blank" title="Open Task 7">CHECK</a>
+  </div>
+
+</body>
+</html>
