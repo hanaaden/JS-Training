@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Game</title>
+    <style>
+
+input[type="text"] {
+  padding: 10px 15px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #4CAF50;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>you are typing</h1>
+    <p id="live">Start Typing....</p>
+	<input type="text" id="input" placeholder="Enter the Text">
+	
+	<script>
+    const input = document.getElementById("input")
+const live = document.getElementById("live")
+
+const counter = document.createElement('p')
+document.body.appendChild(counter);
+
+input.addEventListener("input" , function(){
+  const text = input.value.trim()
+  live.textContent = text
+  live.style.color = "purple"
+  const count = text.length
+  counter.textContent= count
+  
+})
+
+</script>
+</body>
+</html>
