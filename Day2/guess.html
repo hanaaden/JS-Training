@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f2f2f2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .game-container {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 350px;
+    }
+    h1 {
+      margin-bottom: 20px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 80%;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    #message {
+      font-size: 30px;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+    #attempts {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+    #playAgain {
+      display: none;
+      margin-top: 20px;
+      background: #2196F3;
+    }
+    #playAgain:hover {
+      background: #1e88e5;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="game-container">
+    <h1 id="title">Guess the Number!</h1>
+    <input type="number" id="guess" placeholder="Enter a number 1-100">
+    <br>
+    <button id="checkBtn">Check</button>
+    <p id="message"></p>
+    <p id="attempts"></p>
+    <button id="playAgain">Play Again</button>
+  </div>
+
+  <script src="guess.js"></script>
+</body>
+</html>

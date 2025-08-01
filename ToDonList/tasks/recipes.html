@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipes</title>
+    <style>
+        .openbsd{
+            display: none;
+        }
+        .close{
+            display: none;
+        }
+          .menu{
+           display: flex;
+            margin-left: -6px;
+        background-color: #f0ece7;
+        width: 98%;
+        height: 70px;
+        margin-top: -15px;
+    }
+    ul{
+        display: flex;
+        
+    }
+    li{
+        padding-top: 2rem;
+        list-style: none;
+    }
+    a{
+        font-size: 25px;
+        color: #111827;
+        padding-left: 12rem;
+        text-decoration: none;
+    }
+   a:hover{
+    cursor: pointer;
+   }
+   @media screen and (max-width : 450px ) {
+     ul{
+        display: block;
+     }
+        .menu{
+        padding-top: 2rem;
+        display: none;
+        background-color: #f0ece7;
+        width: 100%;
+        height: 768px;
+        font-size: 20px;
+    }
+    .close{
+        display: block;
+        font-size: 40px;
+    }
+    a{
+        display: block;
+        padding-left: 0;
+    }
+     .openbsd{
+        display: block;
+      margin-top: 1rem;
+      margin-left: 18rem;
+      font-size: 20px;
+      border-radius: 10px;
+      background-color: #f0ece7;
+     }
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="openbsd"  > &#9776; </button>
+    <ul class="menu">
+            <a href="javascript:void(0)" class="closeNav close" > &times;</a>
+            <li><a class="menuItem" href="#">Home</a></li>
+            <li><a class="menuItem" href="#">Recipe</a></li>
+            <li><a  class="menuItem" href="#">FAQS</a></li>
+            <div id="main">
+        
+        
+        </div>
+        </ul>
+        
+  </header>
+     <script>
+        const menu = document.querySelector(".menu")
+        const openbsd = document.querySelector(".openbsd")
+        const closeNav = document.querySelector(".closeNav")
+        openbsd.addEventListener("click" , function(){
+         menu.style.display = "block"
+         openbsd.style.display = "none"
+        })
+         closeNav.addEventListener("click" ,function(){
+            menu.style.display = "none"
+         openbsd.style.display = "block"
+         })
+     </script>
+</body>
+</html>
